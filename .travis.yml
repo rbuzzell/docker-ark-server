@@ -3,6 +3,6 @@ sudo: required
 language: generic
 
 before_install:
-  - docker build -t rbuzzell/ark-server
+  - docker build -t rbuzzell/ark-server .
   - docker login -u "$HUB_USERNAME" -p "$HUB_PASSWORD"
   - docker push rbuzzell/ark-server
